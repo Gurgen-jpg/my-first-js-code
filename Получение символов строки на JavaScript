@@ -1,0 +1,65 @@
+Дана строка 'abcde'. Обращаясь к отдельным символам этой строки выведите на экран символ 'a', символ 'c', символ 'e'.
+let s = 'abcde';
+alert(s[0], s[2], s[4]);
+
+Дана переменная со строкой 'abcde'. Обращаясь к отдельным символам этой строки запишите в новую переменную символы этой строки в обратном порядке, то есть 'edcba'.
+let s = 'abcde';
+let s1 = s[4] + s[3] + s[2] + s[1] + s[0];
+
+Дана переменная str со строкой 'abcde' и переменная num с номером символа. Выведите на экран символ, номер которого хранится в переменной num.
+let str = 'abcde';
+let num = 3;
+alert(str[num]);
+
+Дана строка. Выведите на экран ее последний символ.
+function lastChar (s) {
+  alert(s[s.length - 1]);
+}
+
+Дана строка '12345'. Найдите сумму цифр этой строки.
+functio sumChars (s) {
+  let sum = 0;
+  for (let i = 0; i < s.length; i++) {
+    sum += Number(s[i]);
+  };
+ return sum;
+}
+
+Дано число 12345. Найдите сумму цифр этого числа.
+function sumNumbers (int) {
+  let s = String(int);
+  let sum = 0;
+  for (let i = 0; i < s.length; i++) {
+    sum += Number(s[i]);
+  };
+  return sum;
+}
+  
+Дано число 12345. Найдите произведение цифр этого числа.
+function multiplyNumbers(ch) {
+  let s = String(ch);
+  let mult = 1;
+  for (let i = 0; i < s.length; i++) {
+    mult *=  s[i];
+    };
+  return mult;
+};
+
+  Задача 10
+Дано число 12345. Переставьте цифры этого числа в обратном порядке.
+function rearrangeNumber(num) {
+  let s = String(num);
+  let s1 = "";
+  for (let i = s.length - 1; i >= 0; i--) {
+    s1 += s[i];
+    }
+  return Number(s1);
+}
+
+
+
+
+
+
+
+  
